@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolapo Olaniawo - Portfolio</title>
+    <style>
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            background-color: #ffffff;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .title {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        .slogan {
+            font-style: italic;
+            color: #000000aa;
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #000000;
+        }
+        .btn svg {
+            margin-right: 0.5rem;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #00000033;
+            margin-bottom: 2rem;
+        }
+        .tab {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            display: flex;
+            align-items: center;
+        }
+        .tab svg {
+            margin-right: 0.5rem;
+        }
+        .tab.active {
+            border-bottom-color: #000000;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+        .skill-category {
+            margin-bottom: 1rem;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-item {
+            background-color: #ffffff22;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar">DO</div>
+            <div>
+                <h1>Dolapo Olaniawo</h1>
+                <p class="title">Partner Sales Manager</p>
+                <p class="slogan">Driving partner growth through strategic sales</p>
+                <div class="buttons">
+                    <a href="mailto:dolapo.olaniawo@example.com" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        Email
+                    </a>
+                    <a href="https://linkedin.com/in/dolapoolaniawo" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/dolapoolaniawo" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="experience">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                Experience
+            </div>
+            <div class="tab" data-tab="skills">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                Skills
+            </div>
+            <div class="tab" data-tab="projects">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg>
+                Projects
+            </div>
+            <div class="tab" data-tab="education">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                Education
+            </div>
+            <div class="tab" data-tab="interests">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                Interests
+            </div>
+        </div>
+
+        <div class="tab-content active" id="experience">
+            <div class="experience-item">
+                <h3>Partner Sales Manager at KX - Trading Analytics &amp; AI Software</h3>
+                <p>May 2023 – Present</p>
+            </div>
+            <div class="experience-item">
+                <h3>Business Development Executive at KX - Trading Analytics &amp; AI Software</h3>
+                <p>May 2021 – May 2023</p>
+            </div>
+            <div class="experience-item">
+                <h3>Data Analyst (Internship) at Innovapost</h3>
+                <p>Sept 2020 – Dec 2020</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="skills">
+            <div class="skill-category">
+                <h3>category</h3>
+                <div class="skill-list">
+                    <span class="skill-item">SaaS Products</span>
+                    <span class="skill-item">Consultative Sales</span>
+                    <span class="skill-item">Project Management</span>
+                    <span class="skill-item">Python Pandas</span>
+                    <span class="skill-item">Django</span>
+                    <span class="skill-item">Reactjs</span>
+                    <span class="skill-item">Figma</span>
+                    <span class="skill-item">Salesforce CRM</span>
+                    <span class="skill-item">Salesloft</span>
+                    <span class="skill-item">Clari</span>
+                    <span class="skill-item">Groove</span>
+                    <span class="skill-item">Microsoft Office Suite</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="projects">
+            <div class="project-item">
+                <h3>9 Finance for Everyone</h3>
+                <p>Co-founder leading market analysis and product development.</p>
+                <a href="N/A" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+        </div>
+
+        <div class="tab-content" id="education">
+            <div class="education-item">
+                <h3>Bachelor of Science, Physics</h3>
+                <p>University of Ottawa, Ottawa, ON</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="interests">
+            <ul>
+                <li>Entrepreneurship</li>
+                <li>AI and Data Analysis</li>
+                <li>Community Engagement</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.getAttribute('data-tab');
+                    
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
